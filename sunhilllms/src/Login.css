@@ -1,0 +1,459 @@
+/* Login.css */
+
+.login-page-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.logo-container{
+  display: flex;
+  margin-left: 45px;
+}
+.portal-container {
+  margin-top: -131px;
+  margin-bottom: 147px;
+  margin-left: -52px;
+}
+
+.portal-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  padding: 15px 0;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.portal-btn p {
+  margin-top: 10px; 
+  font-size: 0.8rem; 
+  color: white;
+}
+
+/* Teacher Portal button styling */
+.teacher-btn {
+  background-color: #5cb85c; /* Green */
+}
+
+.teacher-btn:hover {
+  background-color: #4cae4c; /* Darker green */
+}
+
+/* Student Portal button styling */
+.student-btn {
+  background-color: #337ab7; 
+}
+
+.student-btn:hover {
+  background-color: #286090; 
+}
+
+/* Parent/Guardian Portal button styling */
+.parent-btn {
+  background-color: #f0ad4e;
+}
+
+.parent-btn:hover {
+  background-color: #ec971f; 
+}
+
+.portal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 5px;
+  width: 130%;
+}
+
+.login-footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.portal-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.4rem;
+ 
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.portal-btn p {
+  margin-top: 10px; 
+  font-size: 0.8rem; 
+  color: white;
+}
+
+
+/*Student Login*/
+
+.student-login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 94vh;
+  padding: 20px;
+  margin: 0;
+  background: #1a032b;
+  overflow: hidden;
+  perspective: 10rem;
+  
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  border-radius: 20px;
+  height: 106%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.character-container {
+  flex: 1; 
+  display: flex;
+  height: 69vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/public/assets/bg.png'); 
+  background-size: cover;
+  background-position: center;
+  margin-top: 14.3rem;
+  border-radius: 20px 0 0 20px;
+  position: relative; 
+}
+
+.student-character {
+  width: 190px; 
+  height: auto;
+  transition: all 0.3s ease-in-out;
+  position: relative; 
+  top: -40px; 
+  right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: -84%;
+  overflow: hidden;
+  margin-left: -326px;
+}
+
+.welcome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  transform: rotate(-30deg);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  color: #2c3e50; /* Darker color for better readability */
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 10px;
+  background: linear-gradient(45deg, #f39c12, #e74c3c);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 94.3%;
+  background: linear-gradient(135deg, #87CEEB 0%, #ADD8E6 100%);
+  background-color: #87CEEB;
+  border-radius: 15px;
+}
+
+.login-form {
+  width: 100%; 
+  max-width: 500px; 
+  height: 250px; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); 
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 8px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px
+}
+
+.login-form h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 95%;
+  margin: 10px 0;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 101%;
+  padding: 15px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #ff3d3d;
+}
+
+
+.login-form h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.keep-logged-in {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.keep-logged-in input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fire-wrapper {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform-origin: top center;
+  transform: translate(-50%, 0) rotate3d(1, 0, 0, 60deg);
+  width: 3.5rem;
+}
+
+.fire {
+  animation: whoosh 1s linear infinite both;
+  width: 100%;
+  
+}
+
+@keyframes whoosh {
+  from {
+    transform: translateY(-25%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.rain {
+  position: absolute;
+  width: 1rem;
+  height: 10rem;
+  background: #ffffff;
+  border-radius: 20%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.drop {
+  width: 1rem;
+  height: 7rem;
+  background: #ffffff;
+  position: absolute;
+  border-radius: 20%;
+  opacity: 0.2;
+}
+
+.rain1 {
+  left: 5rem;
+  top: 2rem;
+  animation: raining 2s linear infinite both;
+}
+
+.rain2 {
+  left: 15rem;
+  top: 10rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop2 {
+  top: 12rem;
+  animation: raining 4s linear infinite both -2s;
+}
+
+.rain3 {
+  left: 5rem;
+  top: 35rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain4 {
+  right: 23rem;
+  top: 6rem;
+  animation: raining 4s linear infinite both;
+}
+
+.rain5 {
+  left: 25rem;
+  top: 47rem;
+  animation: raining 3s linear infinite both -3s;
+}
+
+.drop5 {
+  top: -6rem;
+  animation: raining 2s linear infinite both;
+}
+
+.rain6 {
+  right: 10rem;
+  top: 34rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain7 {
+  left: 34rem;
+  top: 10rem;
+  animation: raining 2s linear infinite both -5s;
+}
+
+.rain8 {
+  right: 25rem;
+  top: 40rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop8 {
+  top: -7rem;
+  animation: raining 4s linear infinite both -6s;
+}
+
+.rain9 {
+  right: 5rem;
+  top: 15.5rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain10 {
+  left: 24rem;
+  top: -4rem;
+  animation: raining 2s linear infinite both -3s;
+}
+
+.drop11 {
+  right: 17rem;
+  top: 20rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop12 {
+  right: 15rem;
+  top: 50rem;
+  animation: raining 4s linear infinite both -1s;
+}
+
+@keyframes raining {
+  from {
+    transform: translateY(-1200px);
+  }
+  to {
+    transform: translateY(869px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .student-login-page {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+
+  .login-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .character-container {
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}
